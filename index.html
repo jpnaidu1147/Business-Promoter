@@ -1,92 +1,136 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="https://upload.wikimedia.org/wikipedia/commons/c/c7/Matrix_code.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Business Promoter | Enter the Matrix of Growth</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUSINESS PROMOTER | Limitless by Technology, Powered by Vision</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              matrix: {
-                black: '#030303',
-                dark: '#0d0d0d',
-                green: '#00ff41',
-                dim: '#008f11',
-                flash: '#e0ffe4',
-              }
-            },
-            fontFamily: {
-              mono: ['"Share Tech Mono"', 'monospace'],
-              orbitron: ['"Orbitron"', 'sans-serif'],
-            },
-            animation: {
-              'pulse-fast': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-              'glitch': 'glitch 1s linear infinite',
-            },
-            keyframes: {
-              glitch: {
-                '2%, 64%': { transform: 'translate(2px,0) skew(0deg)' },
-                '4%, 60%': { transform: 'translate(-2px,0) skew(0deg)' },
-                '62%': { transform: 'translate(0,0) skew(5deg)' },
-              }
-            }
-          }
-        }
-      }
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <style>
+      :root {
+        --matrix-green: #00FF41;
+        --matrix-dark: #003B00;
+        --matrix-void: #000000;
+        --matrix-glow: rgba(0, 255, 65, 0.7);
+      }
+
       body {
-        background-color: #030303;
-        color: #e0ffe4;
+        margin: 0;
+        padding: 0;
+        background-color: var(--matrix-void);
+        color: var(--matrix-green);
         font-family: 'Share Tech Mono', monospace;
         overflow-x: hidden;
       }
-      /* Custom Scrollbar */
+
+      .matrix-text-glow {
+        text-shadow: 0 0 10px var(--matrix-glow), 0 0 20px rgba(0, 255, 65, 0.3);
+      }
+
+      .matrix-border-glow {
+        box-shadow: 0 0 15px rgba(0, 255, 65, 0.2);
+        border-color: rgba(0, 255, 65, 0.4);
+      }
+
       ::-webkit-scrollbar {
-        width: 8px;
+        width: 6px;
       }
+
       ::-webkit-scrollbar-track {
-        background: #0d0d0d;
+        background: var(--matrix-void);
       }
+
       ::-webkit-scrollbar-thumb {
-        background: #003b00;
-        border: 1px solid #00ff41;
+        background: var(--matrix-dark);
+        border-radius: 0;
       }
+
       ::-webkit-scrollbar-thumb:hover {
-        background: #008f11;
+        background: var(--matrix-green);
       }
-      .glow-text {
-        text-shadow: 0 0 5px #00ff41, 0 0 10px #00ff41;
+
+      .crt-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%), 
+                    linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+        background-size: 100% 4px, 3px 100%;
+        z-index: 9999;
+        pointer-events: none;
+        opacity: 0.4;
       }
-      .terminal-cursor::after {
-        content: '_';
-        animation: blink 1s infinite;
+
+      .flicker {
+        animation: flicker 0.15s infinite;
       }
-      @keyframes blink {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0; }
+
+      @keyframes flicker {
+        0% { opacity: 0.97; }
+        50% { opacity: 1; }
+        100% { opacity: 0.98; }
+      }
+
+      .scanline {
+        width: 100%;
+        height: 100px;
+        z-index: 10000;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 255, 65, 0.05) 50%, rgba(0, 0, 0, 0) 100%);
+        position: fixed;
+        bottom: 100%;
+        animation: scanline 8s linear infinite;
+        pointer-events: none;
+      }
+
+      @keyframes scanline {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(200vh); }
+      }
+
+      .glitch-hover:hover {
+        animation: glitch 0.2s ease infinite;
+      }
+
+      @keyframes glitch {
+        0% { clip-path: inset(20% 0 30% 0); transform: translate(-2px, 2px); }
+        20% { clip-path: inset(60% 0 10% 0); transform: translate(2px, -2px); }
+        40% { clip-path: inset(40% 0 50% 0); transform: translate(-2px, -2px); }
+        60% { clip-path: inset(10% 0 80% 0); transform: translate(2px, 2px); }
+        80% { clip-path: inset(50% 0 20% 0); transform: translate(-2px, 2px); }
+        100% { clip-path: inset(20% 0 30% 0); transform: translate(0); }
+      }
+      
+      @keyframes scanline-card {
+        0% { transform: translateY(-300px); }
+        100% { transform: translateY(0px); }
+      }
+
+      .animate-scanline-card {
+        animation: scanline-card 2s linear infinite;
       }
     </style>
-  <script type="importmap">
+<script type="importmap">
 {
   "imports": {
     "react": "https://esm.sh/react@^19.2.3",
     "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
     "react/": "https://esm.sh/react@^19.2.3/",
     "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
-    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+    "vite": "https://esm.sh/vite@^7.3.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
   }
 }
 </script>
 </head>
-  <body>
+<body class="flicker">
     <div id="root"></div>
-  </body>
+    <div class="crt-overlay"></div>
+    <div class="scanline"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
 </html>

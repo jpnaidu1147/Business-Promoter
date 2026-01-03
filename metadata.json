@@ -1,5 +1,8 @@
 {
-  "name": "Business Promoter - The Matrix Edition",
-  "description": "A high-concept digital marketing agency website featuring a Matrix-inspired theme, interactive 'Oracle' AI chat, and immersive visual effects.",
-  "requestFramePermissions": []
+  "name": "BUSINESS PROMOTER - Matrix Edition",
+  "description": "A high-performance digital marketing agency website inspired by The Matrix, featuring SEO, PPC, and development services with an AI-powered 'Marketing Oracle'.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
 }

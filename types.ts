@@ -1,21 +1,37 @@
+
 export interface Service {
   id: string;
   title: string;
   description: string;
   icon: string;
+  matrixCode: string;
+  imageUrl?: string;
 }
 
 export interface ChatMessage {
-  id: string;
   role: 'user' | 'model';
   text: string;
-  isTyping?: boolean;
 }
 
-export enum Section {
+export interface BlogArticle {
+  id: string;
+  slug: string;
+  title: string;
+  excerpt: string;
+  content: string;
+  date: string;
+  readTime: string;
+  category: string;
+  accentColor: string; // 'blue', 'cyan', or 'purple'
+}
+
+export enum AppRoute {
   HOME = 'home',
-  SERVICES = 'services',
   ABOUT = 'about',
+  SERVICES = 'services',
+  PORTFOLIO = 'portfolio',
+  CONTACT = 'contact',
   ORACLE = 'oracle',
-  CONTACT = 'contact'
+  BLOG = 'blog',
+  BLOG_POST = 'blog_post'
 }

@@ -1,74 +1,64 @@
-import React, { useState, useEffect } from 'react';
-import { Terminal, ShieldCheck, Zap } from 'lucide-react';
+
+import React from 'react';
 
 const Hero: React.FC = () => {
-  const [text, setText] = useState('');
-  const fullText = "Wake up, Entrepreneur... The market has you.";
-  
-  useEffect(() => {
-    let index = 0;
-    const timer = setInterval(() => {
-      setText(fullText.slice(0, index));
-      index++;
-      if (index > fullText.length) clearInterval(timer);
-    }, 100);
-    return () => clearInterval(timer);
-  }, []);
-
-  const scrollToContact = () => {
-    const el = document.getElementById('contact');
-    el?.scrollIntoView({ behavior: 'smooth' });
-  };
+  const logoUrl = "https://lh3.googleusercontent.com/d/1b0BASDpDuMgTJIGL16jqlPb2Uvc2-5vK";
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative px-4 pt-20">
-      <div className="max-w-4xl w-full text-center space-y-8 z-10">
+    <section className="min-h-screen flex flex-col items-center justify-center text-center px-4 pt-24 pb-16 bg-transparent overflow-hidden">
+      <div className="max-w-5xl w-full space-y-6 flex flex-col items-center relative z-10">
         
-        <div className="inline-block p-2 border border-matrix-green bg-black/80 backdrop-blur-sm mb-4 animate-pulse">
-            <span className="text-matrix-green font-mono text-sm tracking-widest uppercase">
-                System Status: Online
-            </span>
+        {/* Bangalore Hub Status Node */}
+        <div className="absolute -top-10 right-0 hidden lg:flex items-center space-x-2 font-mono text-[9px] text-[#00FF41]/40 border border-[#00FF41]/20 px-3 py-1 bg-black/40">
+           <span className="relative flex h-2 w-2">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00FF41] opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-[#00FF41]"></span>
+          </span>
+          <span>NODE: BLR_HUB_ACTIVE</span>
+          <span className="opacity-20">|</span>
+          <span>LAT: 12.9716° N</span>
         </div>
 
-        <h1 className="text-4xl md:text-7xl font-orbitron font-bold text-white tracking-tighter mb-4 glow-text min-h-[120px] md:min-h-[160px]">
-          {text}<span className="animate-pulse text-matrix-green">_</span>
-        </h1>
+        <div className="mb-4 group relative">
+          <div className="absolute inset-0 bg-[#00FF41] blur-[40px] md:blur-[60px] opacity-20 group-hover:opacity-40 transition-opacity rounded-full"></div>
+          <img 
+            src={logoUrl} 
+            alt="BUSINESS PROMOTER Logo" 
+            className="w-48 h-48 sm:w-64 sm:h-64 md:w-[420px] md:h-[420px] lg:w-[520px] lg:h-[520px] object-contain neon-logo animate-pulse group-hover:scale-105 transition-transform duration-1000 relative z-10"
+          />
+        </div>
 
-        <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto font-mono leading-relaxed">
-          We are <span className="text-matrix-green font-bold">Business Promoter</span>. We decode the algorithm. We free your brand from obscurity.
+        <div className="inline-block px-3 py-1 border border-[#00FF41] text-[8px] md:text-[10px] tracking-[0.4em] md:tracking-[0.5em] mb-2 bg-black/40 backdrop-blur-sm">
+          SYSTEM_STATUS: <span className="text-white">ONLINE_&_DOMINANT</span>
+        </div>
+        
+        <h1 className="text-3xl sm:text-4xl md:text-6xl font-black tracking-tighter leading-none matrix-text-glow italic select-none uppercase">
+          BUSINESS <br />
+          <span className="text-[#00FF41]">PROMOTER</span>
+        </h1>
+        
+        <p className="text-sm sm:text-base md:text-2xl tracking-[0.3em] md:tracking-[0.4em] font-light max-w-2xl mx-auto uppercase py-2 leading-relaxed">
+          <span className="text-[#00FF41]">LIMITLESS</span> BY TECHNOLOGY <br className="hidden sm:block" />
+          <span className="text-white">POWERED</span> BY VISION
         </p>
 
-        <div className="flex flex-col md:flex-row gap-6 justify-center mt-12">
-          <button 
-            onClick={scrollToContact}
-            className="group relative px-8 py-4 bg-matrix-green text-black font-bold text-lg uppercase tracking-widest hover:bg-white transition-all duration-300 clip-path-slant"
-          >
-            <span className="absolute inset-0 border-2 border-transparent group-hover:border-matrix-green translate-x-1 translate-y-1 transition-transform"></span>
-            Take The Red Pill
-            <span className="block text-xs normal-case opacity-75">Unlock Growth</span>
+        <div className="pt-6 md:pt-8 flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 md:space-x-8 w-full sm:w-auto">
+          <button className="w-full sm:w-auto relative group px-8 md:px-10 py-4 bg-[#00FF41] text-black font-bold text-xs md:text-sm tracking-[0.2em] md:tracking-[0.3em] uppercase transition-all duration-300 hover:bg-white hover:shadow-[0_0_30px_#00FF41] glitch-hover">
+            <span className="relative z-10">Initialize Growth</span>
           </button>
           
-          <button className="px-8 py-4 border border-matrix-green text-matrix-green font-bold text-lg uppercase tracking-widest hover:bg-matrix-green/10 transition-all duration-300">
-            View Our Code
-            <span className="block text-xs normal-case opacity-75">Our Portfolio</span>
+          <button className="w-full sm:w-auto relative group px-8 md:px-10 py-4 border-2 border-[#00FF41] text-[#00FF41] font-bold text-xs md:text-sm tracking-[0.2em] md:tracking-[0.3em] uppercase overflow-hidden transition-all duration-300 hover:text-black">
+            <div className="absolute inset-0 bg-[#00FF41] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
+            <span className="relative z-10">Decrypt Services</span>
           </button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-16 text-left">
-          <div className="p-4 border border-matrix-dim bg-black/50 backdrop-blur">
-            <Terminal className="text-matrix-green mb-2" size={24} />
-            <h3 className="text-white font-bold">Data Driven</h3>
-            <p className="text-sm text-gray-400">Deciphering the matrix of user data.</p>
+        <div className="mt-8 md:mt-12 flex flex-col items-center space-y-1 opacity-50">
+          <div className="text-[7px] md:text-[9px] font-mono animate-pulse tracking-widest uppercase">
+            [ LOGGING_CORE_ASSETS: SUCCESS ]
           </div>
-          <div className="p-4 border border-matrix-dim bg-black/50 backdrop-blur">
-            <ShieldCheck className="text-matrix-green mb-2" size={24} />
-            <h3 className="text-white font-bold">Secure Growth</h3>
-            <p className="text-sm text-gray-400">Protected strategies for scaling.</p>
-          </div>
-          <div className="p-4 border border-matrix-dim bg-black/50 backdrop-blur">
-            <Zap className="text-matrix-green mb-2" size={24} />
-            <h3 className="text-white font-bold">High Velocity</h3>
-            <p className="text-sm text-gray-400">Rapid deployment of campaigns.</p>
+          <div className="text-[7px] md:text-[9px] font-mono animate-pulse delay-75 tracking-widest uppercase">
+            [ ASSETS_STRUCTURED: JS_CSS_ENABLED ]
           </div>
         </div>
       </div>
