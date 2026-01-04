@@ -104,7 +104,7 @@ const Contact: React.FC = () => {
                   href="mailto:writetous@businesspromoter.co.in" 
                   className="text-white text-base sm:text-lg md:text-2xl font-mono hover:text-[#00FF41] transition-colors flex items-center group-hover:matrix-text-glow break-all"
                 >
-                  <span className="text-[#00FF41] mr-2 md:mr-4 shrink-0">>></span>
+                  <span className="text-[#00FF41] mr-2 md:mr-4 shrink-0">{">>"}</span>
                   writetous@businesspromoter.co.in
                 </a>
               </div>
@@ -115,7 +115,7 @@ const Contact: React.FC = () => {
                   href="tel:+917892611988" 
                   className="text-white text-base sm:text-lg md:text-2xl font-mono hover:text-[#00FF41] transition-colors flex items-center group-hover:matrix-text-glow"
                 >
-                  <span className="text-[#00FF41] mr-2 md:mr-4 shrink-0">>></span>
+                  <span className="text-[#00FF41] mr-2 md:mr-4 shrink-0">{">>"}</span>
                   +91 78926 11988
                 </a>
               </div>
