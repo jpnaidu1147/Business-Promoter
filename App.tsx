@@ -166,18 +166,18 @@ const App: React.FC = () => {
 
             {/* Leadership Grid */}
             <div className="space-y-24">
-              {/* Vishwanath Naik */}
+              {/* Vishwanath D */}
               <div className="relative">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-12 items-center relative z-10">
                   <div className="lg:col-span-5 group">
                     <div className="relative bg-black border-2 border-[#00FF41]/40 overflow-hidden aspect-[4/5] shadow-[0_0_20px_rgba(0,255,65,0.1)]">
                       <img 
                         src="https://lh3.googleusercontent.com/d/13csW97UvFan0Y96ZhvhNF52yPW0f08H8" 
-                        alt="Vishwanath Naik" 
-                        className="w-full h-full object-cover object-top grayscale hover:grayscale-0 transition-all duration-700"
+                        alt="Vishwanath D" 
+                        className="w-full h-full object-cover object-top transition-all duration-700"
                       />
                       <div className="absolute bottom-0 left-0 w-full p-4 md:p-6 bg-gradient-to-t from-black via-black/80 to-transparent">
-                        <div className="text-[#00FF41] font-black text-lg md:text-2xl tracking-[0.2em] uppercase italic">Vishwanath Naik</div>
+                        <div className="text-[#00FF41] font-black text-lg md:text-2xl tracking-[0.2em] uppercase italic">Vishwanath D</div>
                         <div className="text-white/40 text-[8px] md:text-[10px] tracking-[0.4em] uppercase font-mono mt-1">Founding_Node_Alpha</div>
                       </div>
                     </div>
@@ -186,7 +186,7 @@ const App: React.FC = () => {
                   <div className="lg:col-span-7 space-y-6 md:space-y-8 font-mono bg-black/60 backdrop-blur-md p-6 md:p-12 border border-[#00FF41]/10 shadow-2xl relative">
                     <div className="absolute top-0 right-0 p-4 opacity-10 font-mono text-[10px]">[ ID_01_CEO ]</div>
                     <div className="space-y-2">
-                      <h3 className="text-3xl md:text-6xl font-black text-white uppercase italic">Vishwanath Naik</h3>
+                      <h3 className="text-3xl md:text-6xl font-black text-white uppercase italic">Vishwanath D</h3>
                       <div className="text-[#00FF41] font-bold text-base md:text-xl uppercase tracking-widest">Founder & CEO</div>
                       <div className="h-0.5 w-16 md:w-24 bg-[#00FF41] mt-4"></div>
                     </div>
@@ -217,7 +217,7 @@ const App: React.FC = () => {
                       <img 
                         src="https://lh3.googleusercontent.com/d/1aRgS6moeHL-sVRJrG06CfdzUhUnQFOJO" 
                         alt="Jaiprakash Naidu" 
-                        className="w-full h-full object-cover object-center grayscale hover:grayscale-0 transition-all duration-700"
+                        className="w-full h-full object-cover object-center transition-all duration-700"
                       />
                       <div className="absolute bottom-0 left-0 w-full p-4 md:p-6 bg-gradient-to-t from-black via-black/80 to-transparent">
                         <div className="text-[#00FF41] font-black text-lg md:text-2xl tracking-[0.2em] uppercase italic">Jaiprakash Naidu</div>
@@ -227,6 +227,38 @@ const App: React.FC = () => {
                   </div>
                 </div>
               </div>
+
+              {/* Dhruva Rao */}
+              <div className="relative">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-12 items-center relative z-10">
+                  <div className="lg:col-span-5 group">
+                    <div className="relative bg-black border-2 border-[#00FF41]/40 overflow-hidden aspect-[4/5] shadow-[0_0_20px_rgba(0,255,65,0.1)]">
+                      <img 
+                        src="https://lh3.googleusercontent.com/d/1IXqwZmaCICIEOF7YW4rIduTB40kQbbxI" 
+                        alt="Dhruva Rao" 
+                        className="w-full h-full object-cover object-top transition-all duration-700"
+                      />
+                      <div className="absolute bottom-0 left-0 w-full p-4 md:p-6 bg-gradient-to-t from-black via-black/80 to-transparent">
+                        <div className="text-[#00FF41] font-black text-lg md:text-2xl tracking-[0.2em] uppercase italic">Dhruva Rao</div>
+                        <div className="text-white/40 text-[8px] md:text-[10px] tracking-[0.4em] uppercase font-mono mt-1">Chief_Mentor_Node</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="lg:col-span-7 space-y-6 md:space-y-8 font-mono bg-black/60 backdrop-blur-md p-6 md:p-12 border border-[#00FF41]/10 shadow-2xl relative">
+                    <div className="absolute top-0 right-0 p-4 opacity-10 font-mono text-[10px]">[ ID_03_MENTOR ]</div>
+                    <div className="space-y-2">
+                      <h3 className="text-3xl md:text-6xl font-black text-white uppercase italic">Dhruva Rao</h3>
+                      <div className="text-[#00FF41] font-bold text-base md:text-xl uppercase tracking-widest">Chief Mentor</div>
+                      <div className="h-0.5 w-16 md:w-24 bg-[#00FF41] mt-4"></div>
+                    </div>
+                    <p className="text-gray-300 text-sm md:text-lg leading-relaxed">
+                      As Chief Mentor, Dhruva Rao brings unparalleled executive insight and strategic foresight to Business Promoter. He plays a pivotal role in guiding organizational governance, fostering leadership development, and shaping high-level corporate strategies. His mentorship empowers the core team to navigate complex market landscapes with agility and integrity.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </section>
         );
