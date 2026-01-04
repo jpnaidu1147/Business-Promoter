@@ -86,6 +86,112 @@ const ARTICLES_DATA: Record<string, any> = {
         </div>
       </>
     )
+  },
+  'how-digital-marketing-helps-grow-faster': {
+    title: 'How Digital Marketing Helps Businesses Grow Faster',
+    category: 'GROWTH',
+    date: 'OCT 30, 2024',
+    accentColor: 'cyan',
+    content: (
+      <>
+        <p className="text-lg md:text-xl text-white font-medium leading-relaxed">In the analog world, growth is linear. You open a second store, you get twice the customers. In the digital world, growth is exponential. A single well-optimized campaign can bring in 100x the traffic without 100x the overhead.</p>
+
+        <h2 className="text-2xl md:text-3xl font-black mt-8 md:mt-12 mb-4 md:mb-6 text-cyan-400 uppercase tracking-tight">Speed of Execution</h2>
+        <p className="text-gray-200">With traditional media, changing a campaign takes weeks. With digital, we can pivot strategies in minutes based on real-time data. If an ad isn't working at 10 AM, it's replaced by 11 AM.</p>
+
+        <div className="my-8 md:my-10 grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="bg-cyan-900/10 p-4 border border-cyan-500/20 text-center">
+            <div className="text-3xl font-black text-white mb-2">24/7</div>
+            <div className="text-xs uppercase tracking-widest text-cyan-400">Availability</div>
+          </div>
+           <div className="bg-cyan-900/10 p-4 border border-cyan-500/20 text-center">
+            <div className="text-3xl font-black text-white mb-2">10x</div>
+            <div className="text-xs uppercase tracking-widest text-cyan-400">Reach Speed</div>
+          </div>
+           <div className="bg-cyan-900/10 p-4 border border-cyan-500/20 text-center">
+            <div className="text-3xl font-black text-white mb-2">100%</div>
+            <div className="text-xs uppercase tracking-widest text-cyan-400">Data Visibility</div>
+          </div>
+        </div>
+
+        <p className="text-gray-200 leading-relaxed">
+          Digital marketing automates the "attract" and "convert" stages of your business funnel. While you sleep, your automated email flows are nurturing leads, and your Google Ads are capturing high-intent searchers.
+        </p>
+      </>
+    )
+  },
+  'common-digital-marketing-myths': {
+    title: 'Common Digital Marketing Myths That Stop Business Growth',
+    category: 'INSIGHTS',
+    date: 'NOV 02, 2024',
+    accentColor: 'blue',
+    content: (
+      <>
+        <p className="text-lg md:text-xl text-white font-medium leading-relaxed">Misinformation is the biggest barrier to digital adoption in India. Let's debug the system and clear out the corrupted files holding your business back.</p>
+
+        <div className="space-y-8 mt-10">
+          <div className="bg-red-900/10 border-l-4 border-red-500 p-6">
+            <h3 className="text-red-400 font-bold uppercase tracking-widest text-sm mb-2">Myth #1</h3>
+            <h4 className="text-xl font-bold text-white mb-2">"Digital Marketing is only for Big Companies."</h4>
+            <p className="text-gray-300">FALSE. Digital platforms actually level the playing field. A small local bakery can outrank a multinational chain locally with better SEO strategies.</p>
+          </div>
+
+          <div className="bg-red-900/10 border-l-4 border-red-500 p-6">
+            <h3 className="text-red-400 font-bold uppercase tracking-widest text-sm mb-2">Myth #2</h3>
+            <h4 className="text-xl font-bold text-white mb-2">"I just need a website, nothing else."</h4>
+            <p className="text-gray-300">FALSE. A website without marketing is like a shop in the middle of a desert. No one will find it unless you build roads (SEO, PPC, Social) leading to it.</p>
+          </div>
+
+          <div className="bg-red-900/10 border-l-4 border-red-500 p-6">
+            <h3 className="text-red-400 font-bold uppercase tracking-widest text-sm mb-2">Myth #3</h3>
+            <h4 className="text-xl font-bold text-white mb-2">"Social Media is enough."</h4>
+            <p className="text-gray-300">FALSE. Social media is rented land. Algorithms change. You need owned assets like a website and an email list to secure your digital future.</p>
+          </div>
+        </div>
+      </>
+    )
+  },
+  'why-choose-business-promoter': {
+    title: 'Why Choose BUSINESS PROMOTER for Digital Marketing?',
+    category: 'ABOUT',
+    date: 'NOV 05, 2024',
+    accentColor: 'purple',
+    content: (
+      <>
+        <p className="text-lg md:text-xl text-white font-medium leading-relaxed">There are thousands of agencies in Bangalore. Why plug into our network? Because we don't just follow the trends; we analyze the code behind them.</p>
+
+        <h2 className="text-2xl md:text-3xl font-black mt-8 md:mt-12 mb-4 md:mb-6 text-purple-400 uppercase tracking-tight">The Matrix Methodology</h2>
+        <p className="text-gray-200 mb-6">We view digital marketing as a complex system of interconnected nodes. We don't just fix one part; we optimize the entire flow.</p>
+
+        <div className="space-y-4">
+          <div className="flex items-start">
+            <div className="text-purple-400 mr-4 font-mono text-xl">01.</div>
+            <div>
+              <h4 className="text-white font-bold uppercase">Data-Driven, Not Guesswork</h4>
+              <p className="text-gray-400 text-sm">Every decision is backed by analytics. If it doesn't increase ROI, we delete it.</p>
+            </div>
+          </div>
+          <div className="flex items-start">
+            <div className="text-purple-400 mr-4 font-mono text-xl">02.</div>
+            <div>
+              <h4 className="text-white font-bold uppercase">Full-Stack Capability</h4>
+              <p className="text-gray-400 text-sm">From coding complex websites to running viral ad campaigns, our team handles the entire stack.</p>
+            </div>
+          </div>
+          <div className="flex items-start">
+            <div className="text-purple-400 mr-4 font-mono text-xl">03.</div>
+            <div>
+              <h4 className="text-white font-bold uppercase">Bangalore-Based, Global Vision</h4>
+              <p className="text-gray-400 text-sm">We understand the local Indian market nuances while applying global best practices.</p>
+            </div>
+          </div>
+        </div>
+
+        <p className="mt-8 md:mt-10 p-6 border border-purple-500/50 text-center font-black text-white uppercase tracking-widest">
+          Limitless by Technology. Powered by Vision.
+        </p>
+      </>
+    )
   }
 };
 
