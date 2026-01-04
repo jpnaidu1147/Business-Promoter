@@ -14,7 +14,7 @@ const ScrambledText: React.FC<{ text: string; delay?: number }> = ({ text, delay
         setDisplayText(
           text
             .split('')
-            .map((letter, index) => {
+            .map((_, index) => {
               if (index < iteration) return text[index];
               return chars[Math.floor(Math.random() * chars.length)];
             })

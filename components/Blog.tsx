@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { AppRoute, BlogArticle } from '../types';
+import { BlogArticle } from '../types';
 
 const BLOG_ARTICLES: BlogArticle[] = [
   {

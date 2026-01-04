@@ -7,7 +7,7 @@ declare const process: {
   };
 };
 
-export const getOracleResponse = async (history: { role: 'user' | 'model', text: string }[], message: string): Promise<string> => {
+export const getOracleResponse = async (_history: { role: 'user' | 'model', text: string }[], message: string): Promise<string> => {
   if (!process.env.API_KEY) {
     return "The system is disconnected from the mainframe. (API Key missing. Please select a valid neural stream.)";
   }

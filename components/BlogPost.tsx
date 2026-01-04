@@ -1,6 +1,6 @@
 
 import React, { useEffect } from 'react';
-import { BlogArticle, AppRoute } from '../types';
+import { AppRoute } from '../types';
 
 interface BlogPostProps {
   slug: string;
