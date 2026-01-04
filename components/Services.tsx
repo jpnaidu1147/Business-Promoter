@@ -72,7 +72,7 @@ const Services: React.FC = () => {
           <h2 className="text-3xl sm:text-4xl md:text-6xl font-black mb-6 tracking-widest uppercase matrix-text-glow italic leading-tight">
             Available Protocols
           </h2>
-          <div className="h-1 w-20 md:w-32 bg-[#00FF41] mx-auto shadow-[0_0_15px_#00FF41]"></div>
+          <div className="h-1 w-20 md:w-32 bg-[#00F0FF] mx-auto shadow-[0_0_15px_#00F0FF]"></div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -92,11 +92,11 @@ const Services: React.FC = () => {
               </div>
 
               <div className="p-5 md:p-6 flex-grow flex flex-col">
-                <div className="text-2xl md:text-3xl font-black text-[#00FF41]/20 group-hover:text-[#00FF41] transition-colors mb-3 md:mb-4 font-mono">
+                <div className="text-2xl md:text-3xl font-black text-[#00FF41]/20 group-hover:text-[#00F0FF] transition-colors mb-3 md:mb-4 font-mono">
                   {s.icon}
                 </div>
                 
-                <h3 className="text-lg md:text-xl font-bold mb-3 text-white group-hover:text-[#00FF41] transition-colors uppercase tracking-wider font-mono">
+                <h3 className="text-lg md:text-xl font-bold mb-3 text-white group-hover:text-[#00F0FF] transition-colors uppercase tracking-wider font-mono">
                   {s.title}
                 </h3>
                 

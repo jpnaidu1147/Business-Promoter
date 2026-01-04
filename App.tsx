@@ -121,7 +121,7 @@ const App: React.FC = () => {
           <section className="pt-32 pb-20 px-4 md:pt-40 md:pb-32 max-w-7xl mx-auto space-y-16 md:space-y-32 bg-transparent relative z-10 overflow-hidden">
             <div className="space-y-4 md:space-y-6">
               <h2 className="text-5xl sm:text-7xl md:text-9xl font-black uppercase matrix-text-glow italic opacity-90 leading-none">About Us</h2>
-              <div className="h-1 w-24 md:w-48 bg-[#00FF41] shadow-[0_0_15px_#00FF41]"></div>
+              <div className="h-1 w-24 md:w-48 bg-[#00F0FF] shadow-[0_0_15px_#00F0FF]"></div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 font-mono leading-relaxed">
@@ -135,7 +135,7 @@ const App: React.FC = () => {
               </div>
               <div className="border border-[#00FF41]/40 p-6 md:p-10 bg-black/80 backdrop-blur-xl space-y-4 md:space-y-6 shadow-2xl relative">
                 <div className="absolute top-0 right-0 p-4 text-[8px] md:text-[10px] text-[#00FF41]/30 uppercase tracking-widest font-bold">NODE_INFO: HQ_BANGALORE</div>
-                <div className="text-[#00FF41] font-black text-xl md:text-2xl tracking-[0.2em] mb-4 underline decoration-[#00FF41]/30 underline-offset-8">[ MISSION_MANIFESTO ]</div>
+                <div className="text-[#00F0FF] font-black text-xl md:text-2xl tracking-[0.2em] mb-4 underline decoration-[#00F0FF]/30 underline-offset-8">[ MISSION_MANIFESTO ]</div>
                 <p className="text-sm md:text-base text-gray-300">
                   To bridge the gap between human vision and technological capability. We empower businesses in Bangalore and beyond with precision-engineered digital strategies that defy traditional limits.
                 </p>
@@ -177,7 +177,7 @@ const App: React.FC = () => {
                         className="w-full h-full object-cover object-top transition-all duration-700"
                       />
                       <div className="absolute bottom-0 left-0 w-full p-4 md:p-6 bg-gradient-to-t from-black via-black/80 to-transparent">
-                        <div className="text-[#00FF41] font-black text-lg md:text-2xl tracking-[0.2em] uppercase italic">Vishwanath D</div>
+                        <div className="text-[#00F0FF] font-black text-lg md:text-2xl tracking-[0.2em] uppercase italic">Vishwanath D</div>
                         <div className="text-white/40 text-[8px] md:text-[10px] tracking-[0.4em] uppercase font-mono mt-1">Founding_Node_Alpha</div>
                       </div>
                     </div>
@@ -187,8 +187,8 @@ const App: React.FC = () => {
                     <div className="absolute top-0 right-0 p-4 opacity-10 font-mono text-[10px]">[ ID_01_CEO ]</div>
                     <div className="space-y-2">
                       <h3 className="text-3xl md:text-6xl font-black text-white uppercase italic">Vishwanath D</h3>
-                      <div className="text-[#00FF41] font-bold text-base md:text-xl uppercase tracking-widest">Founder & CEO</div>
-                      <div className="h-0.5 w-16 md:w-24 bg-[#00FF41] mt-4"></div>
+                      <div className="text-[#00F0FF] font-bold text-base md:text-xl uppercase tracking-widest">Founder & CEO</div>
+                      <div className="h-0.5 w-16 md:w-24 bg-[#00F0FF] mt-4"></div>
                     </div>
                     <p className="text-gray-300 text-sm md:text-lg leading-relaxed">
                       As the Founder & CEO of Business Promoter, he is the strategic force behind the company’s vision, growth philosophy, and performance-driven digital solutions. He has pioneered the integration of high-velocity analytics with creative brand storytelling.
@@ -204,8 +204,8 @@ const App: React.FC = () => {
                     <div className="absolute top-0 left-0 p-4 opacity-10 font-mono text-[10px]">[ ID_02_DIR ]</div>
                     <div className="space-y-2">
                       <h3 className="text-3xl md:text-6xl font-black text-white uppercase italic">Jaiprakash Naidu</h3>
-                      <div className="text-[#00FF41] font-bold text-base md:text-xl uppercase tracking-widest">Director</div>
-                      <div className="h-0.5 w-16 md:w-24 bg-[#00FF41] mt-4"></div>
+                      <div className="text-[#00F0FF] font-bold text-base md:text-xl uppercase tracking-widest">Director</div>
+                      <div className="h-0.5 w-16 md:w-24 bg-[#00F0FF] mt-4"></div>
                     </div>
                     <p className="text-gray-300 text-sm md:text-lg leading-relaxed">
                       Jaiprakash Naidu, Director at Business Promoter, is a visionary leader dedicated to driving operational excellence and high-impact digital transformation. With a sharp focus on business scaling and client success, he oversees the strategic execution of integrated marketing solutions that deliver measurable results in the competitive Indian landscape.
@@ -220,7 +220,7 @@ const App: React.FC = () => {
                         className="w-full h-full object-cover object-center transition-all duration-700"
                       />
                       <div className="absolute bottom-0 left-0 w-full p-4 md:p-6 bg-gradient-to-t from-black via-black/80 to-transparent">
-                        <div className="text-[#00FF41] font-black text-lg md:text-2xl tracking-[0.2em] uppercase italic">Jaiprakash Naidu</div>
+                        <div className="text-[#00F0FF] font-black text-lg md:text-2xl tracking-[0.2em] uppercase italic">Jaiprakash Naidu</div>
                         <div className="text-white/40 text-[8px] md:text-[10px] tracking-[0.4em] uppercase font-mono mt-1">Founding_Node_Beta</div>
                       </div>
                     </div>
@@ -239,7 +239,7 @@ const App: React.FC = () => {
                         className="w-full h-full object-cover object-top transition-all duration-700"
                       />
                       <div className="absolute bottom-0 left-0 w-full p-4 md:p-6 bg-gradient-to-t from-black via-black/80 to-transparent">
-                        <div className="text-[#00FF41] font-black text-lg md:text-2xl tracking-[0.2em] uppercase italic">Dhruva Rao</div>
+                        <div className="text-[#00F0FF] font-black text-lg md:text-2xl tracking-[0.2em] uppercase italic">Dhruva Rao</div>
                         <div className="text-white/40 text-[8px] md:text-[10px] tracking-[0.4em] uppercase font-mono mt-1">Chief_Mentor_Node</div>
                       </div>
                     </div>
@@ -249,8 +249,8 @@ const App: React.FC = () => {
                     <div className="absolute top-0 right-0 p-4 opacity-10 font-mono text-[10px]">[ ID_03_MENTOR ]</div>
                     <div className="space-y-2">
                       <h3 className="text-3xl md:text-6xl font-black text-white uppercase italic">Dhruva Rao</h3>
-                      <div className="text-[#00FF41] font-bold text-base md:text-xl uppercase tracking-widest">Chief Mentor</div>
-                      <div className="h-0.5 w-16 md:w-24 bg-[#00FF41] mt-4"></div>
+                      <div className="text-[#00F0FF] font-bold text-base md:text-xl uppercase tracking-widest">Chief Mentor</div>
+                      <div className="h-0.5 w-16 md:w-24 bg-[#00F0FF] mt-4"></div>
                     </div>
                     <p className="text-gray-300 text-sm md:text-lg leading-relaxed">
                       As Chief Mentor, Dhruva Rao brings unparalleled executive insight and strategic foresight to Business Promoter. He plays a pivotal role in guiding organizational governance, fostering leadership development, and shaping high-level corporate strategies. His mentorship empowers the core team to navigate complex market landscapes with agility and integrity.

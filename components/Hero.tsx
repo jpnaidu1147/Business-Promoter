@@ -34,11 +34,11 @@ const Hero: React.FC = () => {
         
         <h1 className="text-3xl sm:text-4xl md:text-6xl font-black tracking-tighter leading-none matrix-text-glow italic select-none uppercase">
           BUSINESS <br />
-          <span className="text-[#00FF41]">PROMOTER</span>
+          <span className="text-[#00F0FF]">PROMOTER</span>
         </h1>
         
         <p className="text-sm sm:text-base md:text-2xl tracking-[0.3em] md:tracking-[0.4em] font-light max-w-2xl mx-auto uppercase py-2 leading-relaxed">
-          <span className="text-[#00FF41]">LIMITLESS</span> BY TECHNOLOGY <br className="hidden sm:block" />
+          <span className="text-[#00F0FF]">LIMITLESS</span> BY TECHNOLOGY <br className="hidden sm:block" />
           <span className="text-white">POWERED</span> BY VISION
         </p>
 
