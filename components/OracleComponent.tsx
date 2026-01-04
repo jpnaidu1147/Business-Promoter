@@ -33,7 +33,7 @@ const OracleComponent: React.FC = () => {
   };
 
   return (
-    <section className="py-24 px-4 bg-transparent">
+    <section className="py-24 px-4 bg-transparent pt-32 md:pt-24">
       <div className="max-w-4xl mx-auto border border-[#00FF41]/50 bg-black/40 backdrop-blur-md p-1 md:p-6 shadow-[0_0_30px_rgba(0,255,65,0.15)] relative z-10">
         <div className="flex items-center justify-between border-b border-[#00FF41]/30 pb-4 mb-6">
           <div className="flex items-center space-x-3">

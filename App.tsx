@@ -232,7 +232,7 @@ const App: React.FC = () => {
         );
       case AppRoute.SERVICES:
         return (
-          <div className="pt-20 min-h-screen bg-transparent">
+          <div className="pt-32 md:pt-20 min-h-screen bg-transparent">
             <Services />
             <div className="py-24 text-center space-y-10 relative z-10 px-4">
               <h3 className="text-2xl md:text-3xl font-black uppercase tracking-[0.2em] md:tracking-[0.3em] matrix-text-glow">Ready to enter the stream?</h3>
@@ -290,25 +290,25 @@ const App: React.FC = () => {
         );
       case AppRoute.CONTACT:
         return (
-          <div className="pt-20 min-h-screen bg-transparent">
+          <div className="pt-32 md:pt-20 min-h-screen bg-transparent">
             <Contact />
           </div>
         );
       case AppRoute.ORACLE:
         return (
-          <div className="pt-20 min-h-screen bg-transparent">
+          <div className="pt-32 md:pt-20 min-h-screen bg-transparent">
             <OracleComponent />
           </div>
         );
       case AppRoute.BLOG:
         return (
-          <div className="pt-20 min-h-screen bg-transparent">
+          <div className="pt-32 md:pt-20 min-h-screen bg-transparent">
             <Blog onSelectArticle={handleBlogSelect} />
           </div>
         );
       case AppRoute.BLOG_POST:
         return (
-          <div className="pt-20 min-h-screen bg-transparent">
+          <div className="pt-32 md:pt-20 min-h-screen bg-transparent">
             <BlogPost slug={selectedBlogSlug || ''} setRoute={setRoute} />
           </div>
         );

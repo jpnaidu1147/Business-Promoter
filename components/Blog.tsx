@@ -95,7 +95,7 @@ const Blog: React.FC<BlogProps> = ({ onSelectArticle }) => {
   };
 
   return (
-    <section className="pt-24 pb-20 md:pt-40 md:pb-32 px-4 bg-transparent relative z-10 min-h-screen">
+    <section className="pt-32 pb-20 md:pt-40 md:pb-32 px-4 bg-transparent relative z-10 min-h-screen">
       <div className="max-w-[1400px] mx-auto">
         <div className="mb-12 md:mb-20 text-center bg-black/60 backdrop-blur-md py-8 md:py-12 border border-[#00FF41]/10 shadow-2xl relative">
           <div className="text-[8px] md:text-[10px] text-[#00FF41] tracking-[0.4em] md:tracking-[0.8em] uppercase mb-4 font-mono font-bold bg-black/60 inline-block px-3 md:px-4 py-1">

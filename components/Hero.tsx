@@ -5,7 +5,7 @@ const Hero: React.FC = () => {
   const logoUrl = "https://lh3.googleusercontent.com/d/1b0BASDpDuMgTJIGL16jqlPb2Uvc2-5vK";
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center text-center px-4 pt-24 pb-16 bg-transparent overflow-hidden">
+    <section className="min-h-screen flex flex-col items-center justify-center text-center px-4 pt-32 md:pt-24 pb-16 bg-transparent overflow-hidden">
       <div className="max-w-5xl w-full space-y-6 flex flex-col items-center relative z-10">
         
         {/* Bangalore Hub Status Node */}

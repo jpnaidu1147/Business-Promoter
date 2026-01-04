@@ -27,10 +27,10 @@ const Navigation: React.FC<NavigationProps> = ({ currentRoute, setRoute }) => {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-black/90 border-b border-[#00FF41]/30 backdrop-blur-md">
-      <div className="max-w-[1600px] mx-auto px-4 md:px-6 h-16 md:h-20 flex items-center justify-between">
+      <div className="max-w-[1600px] mx-auto px-4 md:px-6 h-16 md:h-20 flex items-center justify-between relative z-50">
         {/* Brand Group */}
         <div 
-          className="flex items-center cursor-pointer group h-full z-50"
+          className="flex items-center cursor-pointer group h-full"
           onClick={() => handleRoute(AppRoute.HOME)}
         >
           <div className="relative h-full flex items-center justify-center mr-2 md:mr-4">
@@ -51,13 +51,13 @@ const Navigation: React.FC<NavigationProps> = ({ currentRoute, setRoute }) => {
           </div>
         </div>
         
-        {/* Desktop Links */}
-        <div className="hidden lg:flex items-center space-x-2 xl:space-x-6">
+        {/* Desktop & Tablet Links (Visible on md and up) */}
+        <div className="hidden md:flex items-center space-x-1 lg:space-x-2 xl:space-x-6">
           {links.map((link) => (
             <button
               key={link.route}
               onClick={() => handleRoute(link.route)}
-              className={`text-[12px] xl:text-[14px] tracking-[0.2em] font-bold transition-all duration-300 transform hover:text-white hover:matrix-text-glow whitespace-nowrap px-3 py-2 border-b-2 border-transparent hover:border-[#00FF41]/50 ${
+              className={`text-[10px] lg:text-[12px] xl:text-[14px] tracking-[0.1em] lg:tracking-[0.2em] font-bold transition-all duration-300 transform hover:text-white hover:matrix-text-glow whitespace-nowrap px-2 lg:px-3 py-2 border-b-2 border-transparent hover:border-[#00FF41]/50 ${
                 currentRoute === link.route ? 'text-white matrix-text-glow border-[#00FF41]' : 'text-[#00FF41]/70'
               }`}
             >
@@ -66,11 +66,11 @@ const Navigation: React.FC<NavigationProps> = ({ currentRoute, setRoute }) => {
           ))}
         </div>
 
-        {/* Mobile Toggle */}
-        <div className="lg:hidden flex items-center">
+        {/* Mobile Toggle (Hidden on md and up) */}
+        <div className="md:hidden flex items-center">
           <button 
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="text-[#00FF41] p-2 focus:outline-none z-50"
+            className="text-[#00FF41] p-2 focus:outline-none"
             aria-label="Toggle Menu"
           >
             <div className="w-6 h-5 relative flex flex-col justify-between">
@@ -80,31 +80,48 @@ const Navigation: React.FC<NavigationProps> = ({ currentRoute, setRoute }) => {
             </div>
           </button>
         </div>
+      </div>
 
-        {/* Mobile Overlay Menu */}
-        <div className={`lg:hidden fixed inset-0 bg-black/95 z-40 transition-transform duration-500 transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} flex flex-col items-center justify-center p-6 pt-20`}>
-          <div className="flex flex-col space-y-6 w-full max-w-xs text-center">
-            {links.map((link) => (
-              <button
-                key={link.route}
-                onClick={() => handleRoute(link.route)}
-                className={`text-xl tracking-[0.3em] font-black py-4 border-b border-[#00FF41]/10 transition-all ${
-                  currentRoute === link.route ? 'text-white matrix-text-glow' : 'text-[#00FF41]'
-                }`}
-              >
-                {link.label}
-              </button>
-            ))}
-            <div className="pt-10 flex flex-col space-y-4">
-               <button 
-                onClick={() => handleRoute(AppRoute.ORACLE)}
-                className="bg-[#00FF41] text-black py-4 font-black uppercase tracking-widest text-sm"
-              >
-                CONSULT ORACLE
-              </button>
-              <div className="text-[10px] text-[#00FF41]/40 uppercase tracking-[0.4em]">
-                // HUB_BANGALORE_NODE_6
-              </div>
+      {/* Mobile Horizontal Scroll Menu (Visible only on mobile < md) */}
+      <div className="md:hidden w-full bg-black/80 border-b border-[#00FF41]/20 overflow-x-auto flex items-center px-4 h-12 no-scrollbar backdrop-blur-sm">
+        <div className="flex space-x-6">
+          {links.map((link) => (
+            <button
+              key={link.route}
+              onClick={() => handleRoute(link.route)}
+              className={`text-[10px] tracking-[0.2em] font-bold whitespace-nowrap transition-colors ${
+                currentRoute === link.route ? 'text-white matrix-text-glow' : 'text-[#00FF41]/70'
+              }`}
+            >
+              {link.label}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Mobile Overlay Menu (Hamburger content) */}
+      <div className={`md:hidden fixed inset-0 bg-black/95 z-40 transition-transform duration-500 transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} flex flex-col items-center justify-start p-6 pt-32 overflow-y-auto`}>
+        <div className="flex flex-col space-y-6 w-full max-w-xs text-center pb-10">
+          {links.map((link) => (
+            <button
+              key={link.route}
+              onClick={() => handleRoute(link.route)}
+              className={`text-xl tracking-[0.3em] font-black py-4 border-b border-[#00FF41]/10 transition-all ${
+                currentRoute === link.route ? 'text-white matrix-text-glow' : 'text-[#00FF41]'
+              }`}
+            >
+              {link.label}
+            </button>
+          ))}
+          <div className="pt-10 flex flex-col space-y-4">
+              <button 
+              onClick={() => handleRoute(AppRoute.ORACLE)}
+              className="bg-[#00FF41] text-black py-4 font-black uppercase tracking-widest text-sm hover:bg-white transition-colors"
+            >
+              CONSULT ORACLE
+            </button>
+            <div className="text-[10px] text-[#00FF41]/40 uppercase tracking-[0.4em]">
+              // HUB_BANGALORE_NODE_6
             </div>
           </div>
         </div>

@@ -219,7 +219,7 @@ const BlogPost: React.FC<BlogPostProps> = ({ slug, setRoute }) => {
 
   return (
     <div className="min-h-screen bg-transparent px-4">
-      <article className="mt-24 md:mt-40 mb-16 md:mb-32 px-5 md:px-12 py-10 md:py-16 max-w-4xl mx-auto bg-black/70 backdrop-blur-xl relative z-10 font-mono shadow-[0_0_100px_rgba(0,0,0,1)] border-x border-[#00FF41]/10 rounded-sm">
+      <article className="mt-28 md:mt-40 mb-16 md:mb-32 px-5 md:px-12 py-10 md:py-16 max-w-4xl mx-auto bg-black/70 backdrop-blur-xl relative z-10 font-mono shadow-[0_0_100px_rgba(0,0,0,1)] border-x border-[#00FF41]/10 rounded-sm">
         <button 
           onClick={() => setRoute(AppRoute.BLOG)}
           className="mb-8 md:mb-12 text-[#00FF41] text-[10px] md:text-xs font-black tracking-[0.3em] md:tracking-[0.4em] flex items-center hover:translate-x-[-8px] transition-transform bg-black/60 px-4 py-3 border border-[#00FF41]/30"
